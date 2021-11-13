@@ -12,16 +12,13 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog, QMenuBar, QMenu, QMessageBox
 from os import getcwd
-from Crypto.Cipher import AES
-import binascii
-from binascii import unhexlify
 import sys
 import chilkat
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(935, 497)
+        MainWindow.setFixedSize(935, 497)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
